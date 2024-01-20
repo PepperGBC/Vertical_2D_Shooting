@@ -487,4 +487,5 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows,unity,csharp
 
 # 내가 추가한거
-Library/
+Vertical_2D_Shooting/Library/
+

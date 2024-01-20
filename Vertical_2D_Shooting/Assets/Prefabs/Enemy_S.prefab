@@ -132,7 +132,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8257032774508029581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56068a7085bbf4249a126c14b023f481, type: 3}
+  m_Script: {fileID: 11500000, guid: 935fa7d7c228046149b6f2dd992a39cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: S
@@ -143,6 +143,6 @@ MonoBehaviour:
   - {fileID: 4326287474489854147, guid: 138040323294fd440a3a823e5d70ad01, type: 3}
   maxShotDelay: 3
   curShotDelay: 0
-  bulletObjA: {fileID: 6944175626221916454, guid: 5f2b0a7c517b54f4184b042e9b55f2d9, type: 3}
-  bulletObjB: {fileID: 6944175626221916454, guid: 532343aca3fe48341b1a66aedc93ec54, type: 3}
+  bulletObjA: {fileID: 6944175626221916454, guid: d0e9f629b328d43f4a5ff2ec726b4747, type: 3}
+  bulletObjB: {fileID: 6944175626221916454, guid: 0bfd7c3bc77df4c9ab3434a961e19151, type: 3}
   player: {fileID: 0}

@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     public GameObject bulletObjA;
     public GameObject bulletObjB;
 
+    public GameManager manager;
+
     Animator anim;
     void Awake()
     {
@@ -102,21 +104,26 @@ public class Player : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Border") {
-            switch(collision.gameObject.name) {
-                case "Top" :
+        if (collision.gameObject.tag == "Border") {
+            switch (collision.gameObject.name) {
+                case "Top":
                     isTouchTop = true;
                     break;
-                case "Bottom" :
+                case "Bottom":
                     isTouchBottom = true;
                     break;
-                case "Right" :
+                case "Right":
                     isTouchRight = true;
                     break;
-                case "Left" :
+                case "Left":
                     isTouchLeft = true;
                     break;
             }
+        }
+        else if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "EnemyBullet")
+        {
+            manager.RespawnPlayer();
+            gameObject.SetActive(false);
         }
     }
     void OnTriggerExit2D(Collider2D collision)
